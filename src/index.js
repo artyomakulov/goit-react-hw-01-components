@@ -1,5 +1,5 @@
 
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 
 // const elem1 = <span>zalupa</span>
 // const elem2 = <span>ssanaya</span>
@@ -67,3 +67,5 @@ const profile = (
 </div>
 </div>
 )
+
+ReactDOM.render(profile, document.querySelector('#root'))
