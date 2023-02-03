@@ -1,4 +1,4 @@
-
+import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App'
 // const elem1 = <span>zalupa</span>
@@ -12,7 +12,7 @@ import App from './App'
 // ReactDOM.render(element, document.querySelector('#root'))
 
 ////////////////////////////////////
-// import React from 'react';
+
 // import ReactDOM from 'react-dom/client';
 // import { App } from 'components/App';
 // import './index.css';
@@ -113,6 +113,7 @@ import App from './App'
   //     }
 
 ReactDOM.render(
-<App
-  />, 
-document.querySelector('#root'))
+<React.StrictMode>
+  <App />
+</React.StrictMode>
+, document.querySelector('#root'))
