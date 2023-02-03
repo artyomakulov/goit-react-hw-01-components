@@ -47,3 +47,6 @@ export default function Profile({userName, tag, location, profileUrl, userFollow
     userViews: PropTypes.number,
     userLikes: PropTypes.number,
   }
+
+
+  
