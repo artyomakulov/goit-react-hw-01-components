@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+
+
 
 export default function Profile({userName, tag, location, profileUrl, userFollowers, userViews, userLikes}) {
 
@@ -32,4 +35,15 @@ export default function Profile({userName, tag, location, profileUrl, userFollow
       </div>
       </div>
       )
+  }
+
+
+  Profile.propTypes = {
+    userName: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    profileUrl: PropTypes.string,
+    userFollowers: PropTypes.number,
+    userViews: PropTypes.number,
+    userLikes: PropTypes.number,
   }

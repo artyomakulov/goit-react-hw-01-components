@@ -1,5 +1,8 @@
 import Profile from './components/Profile'
+// import Section from 'components/Section';
 import user from './user.json';
+
+
 
 export default function App() {
   return (
@@ -13,6 +16,7 @@ export default function App() {
   userViews={user.stats.views}
   userLikes={user.stats.likes}
   />
+  {/* <Section title="xz sho" /> */}
     </div>
   );
 };
