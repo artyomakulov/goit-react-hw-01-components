@@ -14,7 +14,7 @@ export default function Profile({userName, tag, location, profileUrl, userFollow
           className={css.avatar}
         />
         <p className={css.name}>{userName}</p>
-        <p className={css.tag}>{tag}</p>
+        <p className={css.tag}>@{tag}</p>
         <p className={css.location}>{location}</p>
       </div>
       
