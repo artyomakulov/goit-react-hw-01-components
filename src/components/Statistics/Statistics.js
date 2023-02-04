@@ -1,35 +1,24 @@
 import PropTypes from 'prop-types';
 
-export default function Statistics({id, label, percent}) {
-return (
-<section className="statistics">
-  <h2 className="title">Upload stats</h2>
-
-  <ul className="stat-list">
-    <li className="item">
-      <span className="label">{label}</span>
-      <span className="percentage">{percent}</span>
+export default function Statistics({title, stats}) {
+return (  
+<section class="statistics">
+  {title ? <h2 class="title">{title}</h2>: " "}
+  <ul class="stat-list">
+{stats.map((data) => {
+  return (
+    <li class="item" key={data.id}>
+      <span class="label">{data.label}</span>
+      <span class="percentage">{data.percentage}%</span>
     </li>
-    <li className="item">
-      <span className="label">{label}</span>
-      <span className="percentage">{percent}</span>
-    </li>
-    <li className="item">
-      <span className="label">{label}</span>
-      <span className="percentage">{percent}</span>
-    </li>
-    <li className="item">
-      <span className="label">{label}</span>
-      <span className="percentage">{percent}</span>
-    </li>
+  )
+})} 
   </ul>
 </section>
 )
-
 }
 
 Statistics.propTypes = {
-    id: PropTypes.string,
-    label: PropTypes.string,
-    percent: PropTypes.number,
+  title: PropTypes.string.isRequired,
+    stats: PropTypes.array.isRequired,
 }

@@ -16,12 +16,8 @@ export default function App() {
   userViews={user.stats.views}
   userLikes={user.stats.likes}
   />
-  <Statistics 
-  id={data.id}
-  label={data.label}
-  percent={data.percentage}
-  
-  />
+  <Statistics title="Upload stats" stats={data} />
+<Statistics stats={data} />
     </div>
   );
 };
