@@ -1,6 +1,7 @@
-import Profile from './components/Profile'
-import user from './user.json';
-
+import Profile from './components/Profile/Profile';
+import Statistics from 'components/Statistics/Statistics';
+import user from './components/Profile/user.json';
+import data from './components/Statistics/data.json'
 
 
 export default function App() {
@@ -14,6 +15,12 @@ export default function App() {
   userFollowers={user.stats.followers} 
   userViews={user.stats.views}
   userLikes={user.stats.likes}
+  />
+  <Statistics 
+  id={data.id}
+  label={data.label}
+  percent={data.percentage}
+  
   />
     </div>
   );
