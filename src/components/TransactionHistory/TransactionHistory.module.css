@@ -1,6 +1,13 @@
 .transaction_history {
     width: 600px;
-    margin-top: 20px;
+    margin: 20px auto;
     border: 1px solid black;
     text-align: center;
+}
+
+.transHead {
+    height: 30px;
+    text-transform: uppercase;
+    background-color: aqua;
+    color: #fff
 }

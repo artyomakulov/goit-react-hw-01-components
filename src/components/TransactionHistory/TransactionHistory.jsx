@@ -5,7 +5,7 @@ export default function TransactionHistory( {items} ) {
     return (
         <table className={css.transaction_history}>
   <thead>
-    <tr>
+    <tr className={css.transHead}>
       <th>Type</th>
       <th>Amount</th>
       <th>Currency</th>
