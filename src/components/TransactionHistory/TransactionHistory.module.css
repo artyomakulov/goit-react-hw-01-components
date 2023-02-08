@@ -1,13 +1,26 @@
 .transaction_history {
     width: 600px;
     margin: 20px auto;
-    border: 1px solid black;
     text-align: center;
 }
 
 .transHead {
     height: 30px;
+    font-size: 14px;
     text-transform: uppercase;
     background-color: aqua;
     color: #fff
 }
+
+.transLine {
+    height: 40px;
+    color: grey;
+  }
+  
+  .transLine:nth-child(n + 1) {
+    background-color: #f2f2f2;
+  }
+  
+  .transLine:nth-child(2n + 1) {
+    background-color: #fff;
+  }
