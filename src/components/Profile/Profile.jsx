@@ -39,13 +39,13 @@ export default function Profile({userName, tag, location, profileUrl, userFollow
 
 
   Profile.propTypes = {
-    userName: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    profileUrl: PropTypes.string,
-    userFollowers: PropTypes.number,
-    userViews: PropTypes.number,
-    userLikes: PropTypes.number,
+    userName: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    profileUrl: PropTypes.string.isRequired,
+    userFollowers: PropTypes.number.isRequired,
+    userViews: PropTypes.number.isRequired,
+    userLikes: PropTypes.number.isRequired,
   }
 
 
